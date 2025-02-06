@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/contributing": "pages/contributing.html",
+  "/": "pages/index.html",
+  "/getting-started/specifying-system": "pages/getting-started/specifying-system.html",
+  "/getting-started/define-tasks": "pages/getting-started/define-tasks.html",
+  "/getting-started/first-steps": "pages/getting-started/first-steps.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
