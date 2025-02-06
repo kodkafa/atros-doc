@@ -7,9 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // mandatory, otherwise won't export
   },
-  assetPrefix: "./",
-  // Optional: Change the output directory `out` -> `dist`
-  // distDir: "build"
+  basePath: process.env.NODE_ENV === "production" ? "/atros-doc" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/atros-doc" : "",
 };
 
 const withNextra = nextra({
