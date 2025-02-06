@@ -3,7 +3,7 @@
 Atros is an automation tool that's focused on the developers, instead of software projects developed by them.
 
 <img
-  src="/hero-image.jpeg"
+  src={process.env.NODE_ENV === "production" ? "/atros-doc" : "" + "/hero-image.jpeg"}
   alt="hero image"
   style={{ borderRadius: "12px", marginTop: '16px' }}
 />
