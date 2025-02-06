@@ -1,12 +1,17 @@
+import Image from 'next/image';
+
 # Introduction
 
 Atros is an automation tool that's focused on the developers, instead of software projects developed by them.
 
-<img
-  src={process.env.NODE_ENV === "production" ? "/atros-doc" : "" + "/hero-image.jpeg"}
+<div style={{position: "relative", width: '100%', height: 512}}>
+<Image
   alt="hero image"
+  src="/hero-image.jpeg"
+  fill
   style={{ borderRadius: "12px", marginTop: '16px' }}
 />
+</div>
 
 ## ✨ Features
 
