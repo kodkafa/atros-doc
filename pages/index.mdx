@@ -1,11 +1,54 @@
 # Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
 
-## What is Nextra?
+Atros is an automation tool that's focused on the developers, instead of software projects developed by them.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+<img
+  src="/hero-image.jpeg"
+  alt="hero image"
+  style={{ borderRadius: "12px", marginTop: '16px' }}
+/>
 
-## Documentation
+## ✨ Features
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+- 🚀 **Blazingly Fast:** I'm not sure how fast it is, but it's written in 100% Rust btw 😉
+- ✅ **Easy to Write Tasks:** Write your tasks in Typescript easily with in-editor documentation and conditional types
+- 💻 **Define Cross-platform Tasks:** Specify the platform your task will work
+- 📥 **Cross-platform Package Management:** Don't worry about installing packages for every system. Just define install tasks, and give a package list to install them
+- 💾 **Caching:** Atros caches your execution results. So you don't have to worry about running a succeeded task twice. This is useful when you have succeeded and failed tasks in a step at the same time
+- 🤝 **Works With All Javascript Runtimes:** Node, Bun, Deno. Doesn't matter, all you guys are welcome. Just have at least one of them installed in your system.
+
+### ⌛ Upcoming Features
+
+- 🔑 **Store Sensitive Keys Easily:** Encrypt, decrypt, and use your keys easily in your tasks
+- 🧪 **Test Your Tasks:** Write tests for your tasks. Tests for install tasks are defined by default, and cross-platform. Run tests to see if your system has everything up and going, or tasks with only failed tests.
+- {"</>"} **Run&Test Without Installing Files via Git:** Because sometimes you just wonder if you have a system that's capable of doing things that some guy on the internet's is.
+- 🪟 **Windows Support:** Not promised for a long period of time. But seems like it's the point that the project is headed to
+
+## 💫 Getting Started
+
+```sh
+# Install Atros binary
+cargo install atros
+
+# Initialize your configuration automatically in ~/.config/atros
+atros init
+```
+
+To learn more about Atros and how to configure your first steps, check out the [getting started](/getting-started/first-steps) section
+
+
+## ❓ Why Use Atros?
+
+Because Atros is a pure project, it tries to solve only one kind of problem: The kind that people might encounter in a major end-user system/distro, like automating their development environment in a cross-platform way. This laser-focus approach leads to a simple-to-use project.
+
+Before Atros, choosing an automation tool was a two-pointed blade. On one side we have the good-old Bash script, which is too simple to provide defining cross-platform commands, parameters, and packages to install. The other side is all other tools, like Ansible, Chef, and Nix. Which are excellent to use, has no technical issues, and has been there for many years. But their view of life differs. They either focus on software projects or introduce overhead.
+
+Atros doesn't push you to install a new package manager, nor does it try to teach you a new build system. It lets you write your shell commands in bash and runs your package installation commands with the default package manager of your system. So, Atros is not a whole new tool you need to search through docs for hours to learn. It's more like a layer between you and your shell, that provides features like defining platform-specific commands, parameters, and packages to install.
+
+## 📊 Current Status
+
+Atros is still in its early days, so issues are to be expected. Also, v1.0 has not been released yet, therefore incompatibilities with the new versions should be expected for some functionalities. But Atros is available for use in task automation today, and no big breaking changes are expected for the main functionalities like task definitions. Still, compatibility is not promised ☠️
+
+## 💬 Contributing
+
+We need all of you to make Atros an amazing tool! If you're interested in the idea of the project, please take a look at the [contributing](/contributing) section.
