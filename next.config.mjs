@@ -7,6 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // mandatory, otherwise won't export
   },
+  assetPrefix: "./",
   // Optional: Change the output directory `out` -> `dist`
   // distDir: "build"
 };
