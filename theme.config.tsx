@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
@@ -11,12 +10,16 @@ const config: DocsThemeConfig = {
     text: "Atros - Automation for the Rest of Us",
   },
   useNextSeoProps() {
-    const { asPath } = useRouter();
-    if (asPath !== "/") {
-      return {
-        titleTemplate: "%s",
-      };
-    }
+    // const { asPath } = useRouter();
+    // if (asPath !== "/") {
+    //   return {
+    //   };
+    // }
+
+    return {
+      titleTemplate: "%s",
+      description: "Atros documentation",
+    };
   },
 };
 
